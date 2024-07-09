@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <label for="num">Enter a number:</label>
+   <input type="number" id="num">
+   <button id="check">Factorial</button>
+   <h1 id="h11"></h1>
+    <script>
+        let ip = document.getElementById("num");
+        let h11 = document.getElementById("h11");
+        let check = document.getElementById("check");
+
+        check.addEventListener("click", (e) => {
+            e.preventDefault();
+            let num = parseInt(ip.value);
+            fact = 1;
+            for(i=1;i<=num;i++){
+                fact = fact*i
+            }
+            h11.innerHTML = fact
+        });
+
+        
+    </script>
+</body>
+</html>

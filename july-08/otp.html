@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Generator</title>
+  </head>
+  <body>
+    <h1>OTP Generator</h1>
+    <button id="generateOTP">Generate OTP</button>
+    <h2 id="otpDisplay"></h2>
+
+    <script>
+      document
+        .getElementById("generateOTP")
+        .addEventListener("click", function () {
+          document.getElementById("otpDisplay").textContent =
+            "Your OTP is: " + Math.floor(Math.random() * 1000000);
+        });
+    </script>
+  </body>
+</html>
